@@ -1,4 +1,4 @@
-import qiniu.conf
+ import qiniu.conf
 import qiniu.rs
 import qiniu.rsf
 import qiniu.io
@@ -19,11 +19,11 @@ class Storage(driver.Base):
 
         self._bucket = config.qiniu_bucket
         self._domain = config.qiniu_domain
-        
-        self._putpolicy = qiniu.rs.PutPolicy(config.bucket)
+
+        self._putpolicy = qiniu.rs.PutPolicy(config.qiniu_bucket)
         self._getpolicy = qiniu.rs.GetPolicy()
         self._uptoken = self._putpolicy.token()
-        
+
     def _init_path(self, path=None):
         if path:
             if path.startswith('/'):
@@ -53,9 +53,10 @@ class Storage(driver.Base):
         try:
             base_url = qiniu.rs.make_base_url(self._domain, path)
             get_url = self._getpolicy.make_request(base_url)
-            response = urllib.Request.urlopen(get_url)
-        except KeyNotFound:
-            raise exceptions.FileNotFoundError('%s is not there' % path)
+            print get_url
+            response = urllib.urlopen(get_url)
+        except Exception as e:
+            raise exceptions.FileNotFoundError('%s is not there %s, e: %s' % (path, get_url, e))
 
         try:
             while True:
@@ -63,6 +64,7 @@ class Storage(driver.Base):
                 if not chunk: break
                 yield chunk
         except:
+            print err
             raise IOError("Could not get content: %s" % path)
 
     @lru.set
@@ -76,12 +78,10 @@ class Storage(driver.Base):
         if length is not None:
             headers['Content-Length'] = str(length)
 
-        try:
-            ret, err = qiniu.io.put(self._uptoken, path, content, None)
-            if err is not None:
-                raise IOError("Put content %s err: %s" % (path, err))
-        except Exception:
-            raise IOError("Could not put content: %s" % path)
+        ret, err = qiniu.io.put(self._uptoken, path, content, None)
+        if err is not None:
+            print err
+            raise IOError("Put content %s err: %s" % (path, err))
 
     def stream_read(self, path, bytes_range=None):
         path = self._init_path(path)
@@ -114,6 +114,7 @@ class Storage(driver.Base):
     def head_store(self, path):
         ret, err = qiniu.rs.Client().stat(self._bucket, path)
         if err is not None:
+            print err
             raise IOError("Stat path %s err: %s" % (path, err))
         return ret
 
@@ -124,21 +125,23 @@ class Storage(driver.Base):
             marker = None
             err = None
             counter = 0
-            
+
             while err is None:
-                ret, err = rs.list_prefix(bucket_name, prefix=path, marker=marker)
+                ret, err = rs.list_prefix(self._bucket, prefix=path, marker=marker)
                 marker = ret.get('marker', None)
                 for item in ret['items']:
                     counter += 1
-                    yield item[0]
-            
+                    yield item['key']
+
             if err is not qiniu.rsf.EOF:
+                print err
                 raise IOError("List path %s err: %s" % (path, err))
-            
+
             if counter == 0:
+                print 'empty'
                 Exception("empty")
-        except Exception:
-            raise exceptions.FileNotFoundError('%s is not there' % path)
+        except Exception as e:
+            raise exceptions.FileNotFoundError('%s is not there err: %s' % (path, e))
 
     def exists(self, path):
         path = self._init_path(path)
@@ -153,13 +156,20 @@ class Storage(driver.Base):
         path = self._init_path(path)
 
         try:
-            self.head_store(path)
-        except Exception:
-            raise exceptions.FileNotFoundError('%s is not there' % path)
-
-        ret, err = qiniu.rs.Client().delete(self._bucket, path)
-        if err is not None:
-            raise IOError("List path %s err: %s" % (path, err))
+            items = list(self.list_directory(path))
+            if len(items) > 0:
+                paths = []
+                for item in items:
+                    paths.append(qiniu.rs.EntryPath(self._bucket, item))
+                rets, err = qiniu.rs.Client().batch_delete(paths)
+                if err is not None:
+                    print err
+                    raise IOError("Remove path %s err: %s" % (path, err))
+            else:
+                print 'empty'
+                Exception("empty")
+        except Exception as e:
+            raise exceptions.FileNotFoundError('Remove %s is err: %s' % (path, e))
 
     def get_size(self, path):
         path = self._init_path(path)

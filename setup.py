@@ -7,16 +7,16 @@ __author__ = 'Zhang Peihao'
 __copyright__ = 'Copyright 2014'
 __credits__ = []
 
-__version__ = '0.1.14'
+__version__ = '0.1.16'
 __maintainer__ = 'Zhang Peihao'
 __email__ = 'zhangpeihao@gmail.com'
 
 __title__ = 'docker-registry-driver-qiniu'
 __build__ = 0x000000
 
-__url__ = 'https://github.com/zhangpeihao/docker-registry-driver-qiniu'
+__url__ = 'https://gitcafe.com/zhangpeihao/docker-registry-driver-qiniu'
 __description__ = 'Docker registry qiniu storage driver'
-__download__ = 'https://github.com/zhangpeihao/docker-registry-driver-qiniu/archive/master.zip'
+__download__ = 'https://gitcafe.com/zhangpeihao/docker-registry-driver-qiniu/archiveball/master/zip'
 
 setuptools.setup(
     name=__title__,

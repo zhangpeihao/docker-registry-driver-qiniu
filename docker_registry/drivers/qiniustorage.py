@@ -1,4 +1,4 @@
- import qiniu.conf
+import qiniu.conf
 import qiniu.rs
 import qiniu.rsf
 import qiniu.io

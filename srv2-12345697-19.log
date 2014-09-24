@@ -1,0 +1,251 @@
+2014/09/19 20:10:53 Package(OUT, UID: 12345697, MsgID: 402)
+2014/09/19 20:10:53 	B: {"cmd":"GROUP_MSG","nickname":"Mr.chen","uid":12350944,"msg":"\u6211\u53bb\uff0c\u4f60\u4eec\u78b0\u5934\u4e86\uff1f","msgid":436030,"style":0,"remark":"{}","timeline":1411128653,"groupid":10070,"mymsgid":2015,"version":1411128629,"gversion":1410270774,"sender_role":1,"link":"","timestamp":"1411128640","x_y":"121.433851496:31.1908928444","goto_type":0}
+2014/09/19 20:10:53 Package(OUT, UID: , MsgID: 302)
+--
+2014/09/19 20:10:55 Package(IN, UID: 12345697, MsgID: 203)
+2014/09/19 20:10:55 	B: {"gid":10070,"msg_id":"436030","uid":12345697,"cmd":"MSG_CONFIRM","chat_type":0}
+2014/09/19 20:10:55 request php server: proxy_logical_server - map[A:[{"uid":"12345697","time":1411128655,"sign":"4ae9364738c89f33a48aa15f810a5294"}] B:[{"gid":10070,"msg_id":"436030","uid":12345697,"cmd":"MSG_CONFIRM","chat_type":0}]]
+2014/09/19 20:10:55 Package(OUT, UID: 12345697, MsgID: 203)
+2014/09/19 20:10:55 	B: {"cmd":"S_PROXY","ecode":200}
+2014/09/19 20:10:55 resp: &{Status:200 OK StatusCode:200 Proto:HTTP/1.1 ProtoMajor:1 ProtoMinor:1 Header:map[Server:[Gengshang/1.4.6] Date:[Fri, 19 Sep 2014 12:10:55 GMT] Content-Type:[text/html] Connection:[keep-alive]] Body:0xc20811f240 ContentLength:-1 TransferEncoding:[chunked] Close:false Trailer:map[] Request:0xc2080b0410 TLS:<nil>}
+--
+2014/09/19 20:21:33 Package(IN, UID: 12345697, MsgID: 1)
+2014/09/19 20:21:33 	A: {"sign":"7750dbea00a83430c3034d5539b455d6","timestamp":1410590549,"uid":12345697}
+2014/09/19 20:21:33 	B: {"token":"12345697_1410590549_9a59c374792e5d83829864c385f7faa2","device_system_name":"android","group_list":{"10160":[1411048179],"10074":[1411020254],"10071":[1410249930],"10044":[1411116414],"10070":[1410270774],"10149":[1411116440],"10176":[1408603140],"10063":[1409708970]},"version":12}
+--
+2014/09/19 20:21:34 Package(OUT, UID: 12345697, MsgID: 1)
+2014/09/19 20:21:34 	B: {"cmd":"S_LOGIN","ecode":200,"t":1411129294,"ttl":500}
+2014/09/19 20:21:34 Package(OUT, UID: 12345697, MsgID: 402)
+2014/09/19 20:21:34 	B: {"cmd":"OFFMSG","data":{"user_msg":[],"groups":[{"groupid":10149,"name":"?F.P\u4ff1\u4e50\u90e8&?\u5973\u795e\u8ba1\u5212?\u5927\u578b\u805a\u4f1a\u7fa4","img":"http:\/\/nsimg.nvshen.me\/46f2f905a752342b0efafac3805c30cd.png","uid":12353205,"tgod_nums":26,"tgod_max":50,"group_nums":98,"group_max":100,"desc":"","mini_desc":"F.P\u805a\u4f1a\u56e2\u961f\u2014\u5927\u60a6\u57ce\u597d\u4e50\u8fea\u5927\u578b\u805a\u4f1a","timeline":1408351970,"type":0,"xyz":"\u4e0a\u6d77\u5e02|\u9ec4\u6d66\u533a","version":1411129153,"status":1,"spend":0,"order":130,"party_id":100234,"setup":1,"role":1}],"group_msg":[{"groupid":10044,"detail":[]},{"groupid":10063,"detail":[]},{"groupid":10070,"detail":[]},{"groupid":10071,"detail":[]},{"groupid":10074,"detail":[]},{"groupid":10149,"detail":[{"sender_role":1,"remark":"{\"ImgURL\":\"http:\/\/nsimg.nvshen.me\/d8a8cc25428b4b0164c47f27524381c7.jpg@!100x100\",\"Txt\":\"\u65b0\u7528\u6237\u52a0\u5165\u4e86\u805a\u4f1a\u8ba8\u8bba\uff0c\u8bf7\u591a\u5173\u7167\uff01\",\"goto_info\":{\"uid\":\"12354128\"},\"SubTxt\":\"\u70b9\u51fb\u67e5\u770b\"}","uid":12354128,"nickname":"\u7537\u672a\u5a5a","msgid":436038,"msg":"\u52a0\u5165\u4e86\u805a\u4f1a\u8ba8\u8bba","style":3,"version":1410600167,"timeline":1411129153,"link":"https:\/\/mport.nvshen.me\/user\/user_center2?visit_uid=12354128","groupid":10149,"mymsgid":0,"timestamp":"","x_y":"","goto_type":"1"}]},{"groupid":10160,"detail":[]},{"groupid":10176,"detail":[]}]}}
+2014/09/19 20:21:34 Package(OUT, UID: , MsgID: 510)
+--
+2014/09/19 20:21:34 Package(IN, UID: 12345697, MsgID: 203)
+2014/09/19 20:21:34 	B: {"gid":10149,"msg_id":"436038","uid":12345697,"cmd":"MSG_CONFIRM","chat_type":0}
+2014/09/19 20:21:34 request php server: proxy_logical_server - map[A:[{"uid":"12345697","time":1411129294,"sign":"ce3efd56135bd9211750875d85d55dce"}] B:[{"gid":10149,"msg_id":"436038","uid":12345697,"cmd":"MSG_CONFIRM","chat_type":0}]]
+2014/09/19 20:21:34 Package(OUT, UID: 12345697, MsgID: 203)
+2014/09/19 20:21:34 	B: {"cmd":"S_PROXY","ecode":200}
+2014/09/19 20:21:34 resp: &{Status:200 OK StatusCode:200 Proto:HTTP/1.1 ProtoMajor:1 ProtoMinor:1 Header:map[Connection:[keep-alive] Server:[Gengshang/1.4.6] Date:[Fri, 19 Sep 2014 12:21:34 GMT] Content-Type:[text/html]] Body:0xc208443940 ContentLength:-1 TransferEncoding:[chunked] Close:false Trailer:map[] Request:0xc208247e10 TLS:<nil>}
+--
+2014/09/19 20:21:36 Package(OUT, UID: 12345697, MsgID: 402)
+2014/09/19 20:21:36 	B: {"cmd":"GROUP_MSG","nickname":"Mr.chen","uid":12350944,"msg":"\u767d\u7684\uff0c\u6d0b\u7684\uff0c\u7ea2\u7684","msgid":436043,"style":0,"remark":"{}","timeline":1411129296,"groupid":10070,"mymsgid":2026,"version":1411128629,"gversion":1410270774,"sender_role":1,"link":"","timestamp":"1411129294","x_y":"121.433851496:31.1908928444","goto_type":0}
+2014/09/19 20:21:36 Package(OUT, UID: 12346383, MsgID: 402)
+--
+2014/09/19 20:21:37 Package(IN, UID: 12345697, MsgID: 203)
+2014/09/19 20:21:37 	B: {"gid":10070,"msg_id":"436043","uid":12345697,"cmd":"MSG_CONFIRM","chat_type":0}
+2014/09/19 20:21:37 request php server: proxy_logical_server - map[B:[{"gid":10070,"msg_id":"436043","uid":12345697,"cmd":"MSG_CONFIRM","chat_type":0}] A:[{"uid":"12345697","time":1411129297,"sign":"ca17dcbd7aa0040630b6d4352903b10a"}]]
+2014/09/19 20:21:37 Package(OUT, UID: 12345697, MsgID: 203)
+2014/09/19 20:21:37 	B: {"cmd":"S_PROXY","ecode":200}
+2014/09/19 20:21:37 resp: &{Status:200 OK StatusCode:200 Proto:HTTP/1.1 ProtoMajor:1 ProtoMinor:1 Header:map[Connection:[keep-alive] Server:[Gengshang/1.4.6] Date:[Fri, 19 Sep 2014 12:21:37 GMT] Content-Type:[text/html]] Body:0xc2081aaf80 ContentLength:-1 TransferEncoding:[chunked] Close:false Trailer:map[] Request:0xc20811ba00 TLS:<nil>}
+--
+2014/09/19 20:21:58 Package(OUT, UID: 12345697, MsgID: 402)
+2014/09/19 20:21:58 	B: {"cmd":"GROUP_MSG","nickname":"Mr.chen","uid":12350944,"msg":"\u522b\u770b\u4e86","msgid":436044,"style":0,"remark":"{}","timeline":1411129318,"groupid":10070,"mymsgid":2027,"version":1411128629,"gversion":1410270774,"sender_role":1,"link":"","timestamp":"1411129316","x_y":"121.433851496:31.1908928444","goto_type":0}
+2014/09/19 20:21:58 Package(OUT, UID: 12346383, MsgID: 402)
+--
+2014/09/19 20:22:00 Package(IN, UID: 12345697, MsgID: 203)
+2014/09/19 20:22:00 	B: {"gid":10070,"msg_id":"436044","uid":12345697,"cmd":"MSG_CONFIRM","chat_type":0}
+2014/09/19 20:22:00 request php server: proxy_logical_server - map[A:[{"uid":"12345697","time":1411129320,"sign":"f51178562bb55576bd50b3f387ae8014"}] B:[{"gid":10070,"msg_id":"436044","uid":12345697,"cmd":"MSG_CONFIRM","chat_type":0}]]
+2014/09/19 20:22:00 Package(OUT, UID: 12345697, MsgID: 203)
+2014/09/19 20:22:00 	B: {"cmd":"S_PROXY","ecode":200}
+2014/09/19 20:22:00 resp: &{Status:200 OK StatusCode:200 Proto:HTTP/1.1 ProtoMajor:1 ProtoMinor:1 Header:map[Content-Type:[text/html] Connection:[keep-alive] Server:[Gengshang/1.4.6] Date:[Fri, 19 Sep 2014 12:22:00 GMT]] Body:0xc208426440 ContentLength:-1 TransferEncoding:[chunked] Close:false Trailer:map[] Request:0xc2082460d0 TLS:<nil>}
+--
+2014/09/19 20:30:12 Package(IN, UID: 12345697, MsgID: 202)
+2014/09/19 20:30:12 Package(OUT, UID: 12345697, MsgID: 202)
+2014/09/19 20:30:12 	B: {"cmd":"S_KA","ecode":200,"t":1411129812}
+2014/09/19 20:30:12 Error(uid: , ecode: 401, ip: 10.159.35.0:3202)
+--
+2014/09/19 20:38:55 Package(IN, UID: 12345697, MsgID: 202)
+2014/09/19 20:38:55 Package(OUT, UID: 12345697, MsgID: 202)
+2014/09/19 20:38:55 	B: {"cmd":"S_KA","ecode":200,"t":1411130335}
+2014/09/19 20:38:55 Error(uid: , ecode: 401, ip: 10.158.1.0:33697)
+--
+2014/09/19 20:47:35 Package(IN, UID: 12345697, MsgID: 202)
+2014/09/19 20:47:35 Package(OUT, UID: 12345697, MsgID: 202)
+2014/09/19 20:47:35 	B: {"cmd":"S_KA","ecode":200,"t":1411130855}
+2014/09/19 20:47:35 auth error: tgePeek return error read tcp4 10.159.32.0:41435: connection reset by peer , Remote Address: 10.159.32.0:41435
+--
+2014/09/19 20:56:22 Package(IN, UID: 12345697, MsgID: 202)
+2014/09/19 20:56:22 Package(OUT, UID: 12345697, MsgID: 202)
+2014/09/19 20:56:22 	B: {"cmd":"S_KA","ecode":200,"t":1411131382}
+2014/09/19 20:56:22 Error(uid: , ecode: 401, ip: 10.159.32.0:45233)
+--
+2014/09/19 21:05:03 Package(IN, UID: 12345697, MsgID: 202)
+2014/09/19 21:05:03 Package(OUT, UID: 12345697, MsgID: 202)
+2014/09/19 21:05:03 	B: {"cmd":"S_KA","ecode":200,"t":1411131903}
+2014/09/19 21:05:03 auth error: tgePeek return error read tcp4 10.158.3.0:40850: connection reset by peer , Remote Address: 10.158.3.0:40850
+--
+2014/09/19 21:13:48 Package(IN, UID: 12345697, MsgID: 202)
+2014/09/19 21:13:48 Package(OUT, UID: 12345697, MsgID: 202)
+2014/09/19 21:13:48 	B: {"cmd":"S_KA","ecode":200,"t":1411132428}
+2014/09/19 21:13:48 Error(uid: , ecode: 401, ip: 10.159.32.0:33651)
+--
+2014/09/19 21:22:32 Package(IN, UID: 12345697, MsgID: 202)
+2014/09/19 21:22:32 Package(OUT, UID: 12345697, MsgID: 202)
+2014/09/19 21:22:32 	B: {"cmd":"S_KA","ecode":200,"t":1411132952}
+2014/09/19 21:22:32 auth error: tgePeek return error read tcp4 10.158.3.0:32027: connection reset by peer , Remote Address: 10.158.3.0:32027
+--
+2014/09/19 21:31:13 Package(IN, UID: 12345697, MsgID: 202)
+2014/09/19 21:31:13 Package(OUT, UID: 12345697, MsgID: 202)
+2014/09/19 21:31:13 	B: {"cmd":"S_KA","ecode":200,"t":1411133473}
+2014/09/19 21:31:13 Error(uid: , ecode: 401, ip: 10.158.3.0:5595)
+--
+2014/09/19 21:39:33 Package(IN, UID: 12345697, MsgID: 202)
+2014/09/19 21:39:33 Package(OUT, UID: 12345697, MsgID: 202)
+2014/09/19 21:39:33 	B: {"cmd":"S_KA","ecode":200,"t":1411133973}
+2014/09/19 21:39:33 Error(uid: , ecode: 401, ip: 10.158.3.0:11218)
+--
+2014/09/19 21:47:54 Package(IN, UID: 12345697, MsgID: 202)
+2014/09/19 21:47:54 Package(OUT, UID: 12345697, MsgID: 202)
+2014/09/19 21:47:54 	B: {"cmd":"S_KA","ecode":200,"t":1411134474}
+2014/09/19 21:47:54 auth error: tgePeek return error read tcp4 10.158.3.0:10811: connection reset by peer , Remote Address: 10.158.3.0:10811
+--
+2014/09/19 21:56:13 Package(IN, UID: 12345697, MsgID: 202)
+2014/09/19 21:56:13 Package(OUT, UID: 12345697, MsgID: 202)
+2014/09/19 21:56:13 	B: {"cmd":"S_KA","ecode":200,"t":1411134973}
+2014/09/19 21:56:13 auth error: tgePeek return error read tcp4 10.158.1.0:42330: connection reset by peer , Remote Address: 10.158.1.0:42330
+--
+2014/09/19 22:00:01 Package(IN, UID: 12345697, MsgID: 1)
+2014/09/19 22:00:01 	A: {"sign":"7750dbea00a83430c3034d5539b455d6","timestamp":1410590549,"uid":12345697}
+2014/09/19 22:00:01 	B: {"token":"12345697_1410590549_9a59c374792e5d83829864c385f7faa2","device_system_name":"android","group_list":{"10160":[1411048179],"10074":[1411020254],"10071":[1410249930],"10044":[1411116414],"10070":[1410270774],"10149":[1411129153],"10176":[1408603140],"10063":[1409708970]},"version":12}
+--
+2014/09/19 22:00:01 Package(OUT, UID: 12345697, MsgID: 403)
+2014/09/19 22:00:01 	B: {"cmd":"S_CLOSE","ecode":499}
+2014/09/19 22:00:01 Package(OUT, UID: 12345697, MsgID: 1)
+2014/09/19 22:00:01 	B: {"cmd":"S_LOGIN","ecode":200,"t":1411135201,"ttl":500}
+2014/09/19 22:00:01 Package(OUT, UID: 12345697, MsgID: 402)
+2014/09/19 22:00:01 	B: {"cmd":"OFFMSG","data":{"user_msg":[],"groups":[],"group_msg":[{"groupid":10044,"detail":[]},{"groupid":10063,"detail":[]},{"groupid":10070,"detail":[]},{"groupid":10071,"detail":[]},{"groupid":10074,"detail":[]},{"groupid":10149,"detail":[]},{"groupid":10160,"detail":[]},{"groupid":10176,"detail":[]}]}}
+2014/09/19 22:00:01 Package(OUT, UID: , MsgID: 510)
+--
+2014/09/19 22:00:16 Package(IN, UID: 12345697, MsgID: 202)
+2014/09/19 22:00:16 Package(OUT, UID: 12345697, MsgID: 202)
+2014/09/19 22:00:16 	B: {"cmd":"S_KA","ecode":200,"t":1411135216}
+2014/09/19 22:00:16 Error(uid: , ecode: 401, ip: 10.158.1.0:27172)
+--
+2014/09/19 22:08:22 Package(IN, UID: 12345697, MsgID: 202)
+2014/09/19 22:08:22 Package(OUT, UID: 12345697, MsgID: 202)
+2014/09/19 22:08:22 	B: {"cmd":"S_KA","ecode":200,"t":1411135702}
+2014/09/19 22:08:22 Error(uid: , ecode: 401, ip: 10.158.3.0:64003)
+--
+2014/09/19 22:08:36 Package(IN, UID: 12345697, MsgID: 202)
+2014/09/19 22:08:36 Package(OUT, UID: 12345697, MsgID: 202)
+2014/09/19 22:08:36 	B: {"cmd":"S_KA","ecode":200,"t":1411135716}
+2014/09/19 22:08:36 auth error: tgePeek return error read tcp4 10.159.32.0:47427: connection reset by peer , Remote Address: 10.159.32.0:47427
+--
+2014/09/19 22:17:05 Package(IN, UID: 12345697, MsgID: 202)
+2014/09/19 22:17:05 Package(OUT, UID: 12345697, MsgID: 202)
+2014/09/19 22:17:05 	B: {"cmd":"S_KA","ecode":200,"t":1411136225}
+2014/09/19 22:17:05 auth error: tgePeek return error read tcp4 10.158.3.0:14472: connection reset by peer , Remote Address: 10.158.3.0:14472
+--
+2014/09/19 22:17:20 Package(IN, UID: 12345697, MsgID: 202)
+2014/09/19 22:17:20 Package(OUT, UID: 12345697, MsgID: 202)
+2014/09/19 22:17:20 	B: {"cmd":"S_KA","ecode":200,"t":1411136240}
+2014/09/19 22:17:20 Error(uid: , ecode: 401, ip: 10.158.3.0:24341)
+--
+2014/09/19 22:25:50 Package(IN, UID: 12345697, MsgID: 202)
+2014/09/19 22:25:50 Package(OUT, UID: 12345697, MsgID: 202)
+2014/09/19 22:25:50 	B: {"cmd":"S_KA","ecode":200,"t":1411136750}
+2014/09/19 22:25:50 Error(uid: , ecode: 401, ip: 10.158.3.0:6604)
+--
+2014/09/19 22:26:05 Package(IN, UID: 12345697, MsgID: 202)
+2014/09/19 22:26:05 Package(OUT, UID: 12345697, MsgID: 202)
+2014/09/19 22:26:05 	B: {"cmd":"S_KA","ecode":200,"t":1411136765}
+2014/09/19 22:26:05 auth error: tgePeek return error read tcp4 10.158.3.0:42414: connection reset by peer , Remote Address: 10.158.3.0:42414
+--
+2014/09/19 22:34:33 Package(IN, UID: 12345697, MsgID: 202)
+2014/09/19 22:34:33 Package(OUT, UID: 12345697, MsgID: 202)
+2014/09/19 22:34:33 	B: {"cmd":"S_KA","ecode":200,"t":1411137273}
+2014/09/19 22:34:33 Error(uid: , ecode: 401, ip: 10.158.0.0:64746)
+--
+2014/09/19 22:34:48 Package(IN, UID: 12345697, MsgID: 202)
+2014/09/19 22:34:48 Package(OUT, UID: 12345697, MsgID: 202)
+2014/09/19 22:34:48 	B: {"cmd":"S_KA","ecode":200,"t":1411137288}
+2014/09/19 22:34:49 Error(uid: , ecode: 401, ip: 10.158.3.0:22664)
+--
+2014/09/19 22:43:21 Package(IN, UID: 12345697, MsgID: 202)
+2014/09/19 22:43:21 Package(OUT, UID: 12345697, MsgID: 202)
+2014/09/19 22:43:21 	B: {"cmd":"S_KA","ecode":200,"t":1411137801}
+2014/09/19 22:43:22 Error(uid: , ecode: 401, ip: 10.158.1.0:36805)
+--
+2014/09/19 22:43:37 Package(IN, UID: 12345697, MsgID: 202)
+2014/09/19 22:43:37 Package(OUT, UID: 12345697, MsgID: 202)
+2014/09/19 22:43:37 	B: {"cmd":"S_KA","ecode":200,"t":1411137817}
+2014/09/19 22:43:37 Error(uid: , ecode: 401, ip: 10.158.0.0:57471)
+--
+2014/09/19 22:52:01 Package(IN, UID: 12345697, MsgID: 202)
+2014/09/19 22:52:01 Package(OUT, UID: 12345697, MsgID: 202)
+2014/09/19 22:52:01 	B: {"cmd":"S_KA","ecode":200,"t":1411138321}
+2014/09/19 22:52:01 auth error: tgePeek return error read tcp4 10.158.1.0:20199: connection reset by peer , Remote Address: 10.158.1.0:20199
+--
+2014/09/19 22:52:16 Package(IN, UID: 12345697, MsgID: 202)
+2014/09/19 22:52:16 Package(OUT, UID: 12345697, MsgID: 202)
+2014/09/19 22:52:16 	B: {"cmd":"S_KA","ecode":200,"t":1411138336}
+2014/09/19 22:52:16 auth error: tgePeek return error read tcp4 10.158.2.0:17974: connection reset by peer , Remote Address: 10.158.2.0:17974
+--
+2014/09/19 23:00:43 Package(IN, UID: 12345697, MsgID: 202)
+2014/09/19 23:00:43 Package(OUT, UID: 12345697, MsgID: 202)
+2014/09/19 23:00:43 	B: {"cmd":"S_KA","ecode":200,"t":1411138843}
+2014/09/19 23:00:43 Package(IN, UID: , MsgID: 509)
+--
+2014/09/19 23:00:59 Package(IN, UID: 12345697, MsgID: 202)
+2014/09/19 23:00:59 Package(OUT, UID: 12345697, MsgID: 202)
+2014/09/19 23:00:59 	B: {"cmd":"S_KA","ecode":200,"t":1411138859}
+2014/09/19 23:00:59 auth error: tgePeek return error read tcp4 10.159.33.0:17355: connection reset by peer , Remote Address: 10.159.33.0:17355
+--
+2014/09/19 23:09:27 Package(IN, UID: 12345697, MsgID: 202)
+2014/09/19 23:09:27 Package(OUT, UID: 12345697, MsgID: 202)
+2014/09/19 23:09:27 	B: {"cmd":"S_KA","ecode":200,"t":1411139367}
+2014/09/19 23:09:27 auth error: tgePeek return error read tcp4 10.158.1.0:57086: connection reset by peer , Remote Address: 10.158.1.0:57086
+--
+2014/09/19 23:09:41 Package(IN, UID: 12345697, MsgID: 202)
+2014/09/19 23:09:41 Package(OUT, UID: 12345697, MsgID: 202)
+2014/09/19 23:09:41 	B: {"cmd":"S_KA","ecode":200,"t":1411139381}
+2014/09/19 23:09:42 Error(uid: , ecode: 401, ip: 10.158.1.0:15417)
+--
+2014/09/19 23:18:10 Package(IN, UID: 12345697, MsgID: 202)
+2014/09/19 23:18:10 Package(OUT, UID: 12345697, MsgID: 202)
+2014/09/19 23:18:10 	B: {"cmd":"S_KA","ecode":200,"t":1411139890}
+2014/09/19 23:18:11 Error(uid: , ecode: 401, ip: 10.159.34.0:38527)
+--
+2014/09/19 23:18:26 Package(IN, UID: 12345697, MsgID: 202)
+2014/09/19 23:18:26 Package(OUT, UID: 12345697, MsgID: 202)
+2014/09/19 23:18:26 	B: {"cmd":"S_KA","ecode":200,"t":1411139906}
+2014/09/19 23:18:26 auth error: tgePeek return error EOF , Remote Address: 112.124.140.135:45635
+--
+2014/09/19 23:26:52 Package(IN, UID: 12345697, MsgID: 202)
+2014/09/19 23:26:52 Package(OUT, UID: 12345697, MsgID: 202)
+2014/09/19 23:26:52 	B: {"cmd":"S_KA","ecode":200,"t":1411140412}
+2014/09/19 23:26:53 Package(IN, UID: , MsgID: 509)
+--
+2014/09/19 23:27:07 Package(IN, UID: 12345697, MsgID: 202)
+2014/09/19 23:27:07 Package(OUT, UID: 12345697, MsgID: 202)
+2014/09/19 23:27:07 	B: {"cmd":"S_KA","ecode":200,"t":1411140427}
+2014/09/19 23:27:08 auth error: tgePeek return error read tcp4 10.159.34.0:48753: connection reset by peer , Remote Address: 10.159.34.0:48753
+--
+2014/09/19 23:35:36 Package(IN, UID: 12345697, MsgID: 202)
+2014/09/19 23:35:36 Package(OUT, UID: 12345697, MsgID: 202)
+2014/09/19 23:35:36 	B: {"cmd":"S_KA","ecode":200,"t":1411140936}
+2014/09/19 23:35:37 auth error: tgePeek return error read tcp4 10.159.34.0:19855: connection reset by peer , Remote Address: 10.159.34.0:19855
+--
+2014/09/19 23:35:52 Package(IN, UID: 12345697, MsgID: 202)
+2014/09/19 23:35:52 Package(OUT, UID: 12345697, MsgID: 202)
+2014/09/19 23:35:52 	B: {"cmd":"S_KA","ecode":200,"t":1411140952}
+2014/09/19 23:35:52 Error(uid: , ecode: 401, ip: 10.159.35.0:60131)
+--
+2014/09/19 23:44:21 Package(IN, UID: 12345697, MsgID: 202)
+2014/09/19 23:44:21 Package(OUT, UID: 12345697, MsgID: 202)
+2014/09/19 23:44:21 	B: {"cmd":"S_KA","ecode":200,"t":1411141461}
+2014/09/19 23:44:21 auth error: tgePeek return error read tcp4 10.158.1.0:64526: connection reset by peer , Remote Address: 10.158.1.0:64526
+--
+2014/09/19 23:44:36 Package(IN, UID: 12345697, MsgID: 202)
+2014/09/19 23:44:36 Package(OUT, UID: 12345697, MsgID: 202)
+2014/09/19 23:44:36 	B: {"cmd":"S_KA","ecode":200,"t":1411141476}
+2014/09/19 23:44:36 Error(uid: , ecode: 401, ip: 10.159.34.0:57535)
+--
+2014/09/19 23:53:05 Package(IN, UID: 12345697, MsgID: 202)
+2014/09/19 23:53:05 Package(OUT, UID: 12345697, MsgID: 202)
+2014/09/19 23:53:05 	B: {"cmd":"S_KA","ecode":200,"t":1411141985}
+2014/09/19 23:53:05 Package(IN, UID: , MsgID: 509)
+--
+2014/09/19 23:53:21 Package(IN, UID: 12345697, MsgID: 202)
+2014/09/19 23:53:21 Package(OUT, UID: 12345697, MsgID: 202)
+2014/09/19 23:53:21 	B: {"cmd":"S_KA","ecode":200,"t":1411142001}
+2014/09/19 23:53:21 auth error: tgePeek return error read tcp4 10.158.2.0:47846: connection reset by peer , Remote Address: 10.158.2.0:47846

@@ -20,9 +20,7 @@ class Storage(driver.Base):
         self._bucket = config.qiniu_bucket
         self._domain = config.qiniu_domain
 
-        self._putpolicy = qiniu.rs.PutPolicy(config.qiniu_bucket)
         self._getpolicy = qiniu.rs.GetPolicy()
-        self._uptoken = self._putpolicy.token()
 
     def _init_path(self, path=None):
         if path:
@@ -86,7 +84,9 @@ class Storage(driver.Base):
         if length is not None:
             headers['Content-Length'] = str(length)
 
-        ret, err = qiniu.io.put(self._uptoken, path, content, None)
+        policy = qiniu.rs.PutPolicy(self._bucket+":"+path)
+
+        ret, err = qiniu.io.put(policy.token(), path, content, None)
         if err is not None:
             print err
             raise IOError("Put content %s err: %s" % (path, err))

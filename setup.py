@@ -7,7 +7,7 @@ __author__ = 'Zhang Peihao'
 __copyright__ = 'Copyright 2014'
 __credits__ = []
 
-__version__ = '0.1.18'
+__version__ = '0.1.19'
 __maintainer__ = 'Zhang Peihao'
 __email__ = 'zhangpeihao@gmail.com'
 

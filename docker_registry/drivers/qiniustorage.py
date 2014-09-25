@@ -37,6 +37,12 @@ class Storage(driver.Base):
         base_url = qiniu.rs.make_base_url(self._domain, path)
         return self._getpolicy.make_request(base_url)
 
+    def get_json(self, path):
+        try:
+            return json.loads(self.get_unicode(path))
+        except:
+            return []
+
     @lru.get
     def get_content(self, path):
         path = self._init_path(path)
@@ -45,7 +51,8 @@ class Storage(driver.Base):
         try:
             for buf in self.get_store(path, self.buffer_size):
                 output.write(buf)
-            return output.getvalue()
+            strValue = output.getvalue()
+            return strValue
         finally:
             output.close()
 
@@ -59,12 +66,13 @@ class Storage(driver.Base):
             raise exceptions.FileNotFoundError('%s is not there %s, e: %s' % (path, get_url, e))
 
         try:
+            if response.getcode() != 200:
+                raise IOError('f')
             while True:
                 chunk = response.read(chunk_size)
                 if not chunk: break
                 yield chunk
         except:
-            print err
             raise IOError("Could not get content: %s" % path)
 
     @lru.set
